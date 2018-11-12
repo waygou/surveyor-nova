@@ -2,11 +2,11 @@
 
 namespace Waygou\SurveyorNova;
 
+use Laravel\Nova\Nova;
+use Laravel\Nova\Tool;
 use Waygou\SurveyorNova\Resources\Policy;
 use Waygou\SurveyorNova\Resources\Profile;
 use Waygou\SurveyorNova\Resources\Scope;
-use Laravel\Nova\Nova;
-use Laravel\Nova\Tool;
 
 class NovaSurveyor extends Tool
 {
