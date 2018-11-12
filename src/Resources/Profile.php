@@ -4,10 +4,10 @@ namespace Waygou\SurveyorNova\Resources;
 
 use App\Nova\Resource;
 use Illuminate\Http\Request;
-use Waygou\SurveyorNova\Fields\PolicyFields;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Waygou\SurveyorNova\Fields\PolicyFields;
 
 class Profile extends Resource
 {

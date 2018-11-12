@@ -4,15 +4,15 @@ namespace Waygou\SurveyorNova;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Nova\Events\ServingNova;
+use Laravel\Nova\Nova;
+use Waygou\Surveyor\Models\Policy;
+use Waygou\Surveyor\Models\Profile;
+use Waygou\Surveyor\Models\Scope;
 use Waygou\SurveyorNova\Http\Middleware\Authorize;
 use Waygou\SurveyorNova\Observers\PolicyNovaObserver;
 use Waygou\SurveyorNova\Observers\ProfileNovaObserver;
 use Waygou\SurveyorNova\Observers\ScopeNovaObserver;
-use Waygou\Surveyor\Models\Policy;
-use Waygou\Surveyor\Models\Profile;
-use Waygou\Surveyor\Models\Scope;
-use Laravel\Nova\Events\ServingNova;
-use Laravel\Nova\Nova;
 
 class ToolServiceProvider extends ServiceProvider
 {
