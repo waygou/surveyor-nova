@@ -1,0 +1,37 @@
+{
+    "name": "waygou/surveyor-nova",
+    "description": "A Laravel Nova that allows you to manage your Model policies and global scopes.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "waygou/helpers": "dev-master",
+        "waygou/surveyor": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Waygou\\SurveyorNova\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Waygou\\SurveyorNova\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "Waygou",
+            "email": "bruno.falcao@waygou.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
