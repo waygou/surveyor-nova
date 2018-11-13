@@ -64,7 +64,7 @@ class Profile extends Resource
                 ->sortable()
                 ->rules('required', 'string'),
 
-            BelongsToMany::make('Users', 'users', config('nova_surveyor.user_resource'))
+            BelongsToMany::make('Users', 'users', config('surveyor_nova.user_resource'))
                          ->sortable(),
 
             BelongsToMany::make('Scopes', 'scopes', \Waygou\SurveyorNova\Resources\Scope::class)
