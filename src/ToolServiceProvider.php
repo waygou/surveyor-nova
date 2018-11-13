@@ -23,8 +23,8 @@ class ToolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'nova-surveyor');
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'nova-surveyor');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'surveyor-nova');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'surveyor-nova');
 
         $this->app->booted(function () {
             $this->routes();
@@ -42,8 +42,8 @@ class ToolServiceProvider extends ServiceProvider
     protected function registerPublishing()
     {
         $this->publishes([
-            __DIR__.'/../config/nova_surveyor.php' => config_path('nova_surveyor.php'),
-        ], 'nova-surveyor-config');
+            __DIR__.'/../config/surveyor_nova.php' => config_path('surveyor_nova.php'),
+        ], 'surveyor-nova-config');
     }
 
     /**
@@ -58,7 +58,7 @@ class ToolServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova', Authorize::class])
-                ->prefix('nova-vendor/nova-surveyor')
+                ->prefix('nova-vendor/surveyor-nova')
                 ->group(__DIR__.'/../routes/api.php');
     }
 

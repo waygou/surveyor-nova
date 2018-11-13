@@ -26,6 +26,6 @@ class ClassExists implements Rule
      */
     public function message()
     {
-        return trans('nova-surveyor::validation.class_inexistant');
+        return trans('surveyor-nova::validation.class_inexistant');
     }
 }

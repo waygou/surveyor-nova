@@ -2,7 +2,7 @@
 
 namespace Waygou\SurveyorNova\Http\Middleware;
 
-use Waygou\SurveyorNova\NovaSurveyor;
+use Waygou\SurveyorNova\SurveyorNova;
 
 class Authorize
 {
@@ -16,6 +16,6 @@ class Authorize
      */
     public function handle($request, $next)
     {
-        return resolve(NovaSurveyor::class)->authorize($request) ? $next($request) : abort(403);
+        return resolve(SurveyorNova::class)->authorize($request) ? $next($request) : abort(403);
     }
 }

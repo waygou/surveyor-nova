@@ -26,6 +26,6 @@ class IsModel implements Rule
      */
     public function message()
     {
-        return trans('nova-surveyor::validation.not_model');
+        return trans('surveyor-nova::validation.not_model');
     }
 }

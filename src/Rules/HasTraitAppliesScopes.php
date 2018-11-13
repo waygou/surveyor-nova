@@ -26,6 +26,6 @@ class HasTraitAppliesScopes implements Rule
      */
     public function message()
     {
-        return trans('nova-surveyor::validation.traits.applies_scopes.inexistant');
+        return trans('surveyor-nova::validation.traits.applies_scopes.inexistant');
     }
 }

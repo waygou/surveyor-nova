@@ -1,8 +1,8 @@
 Nova.booting((Vue, router) => {
     router.addRoutes([
         {
-            name: 'nova-surveyor',
-            path: '/nova-surveyor',
+            name: 'surveyor-nova',
+            path: '/surveyor-nova',
             component: require('./components/Tool'),
         },
     ])

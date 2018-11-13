@@ -26,6 +26,6 @@ class HasInterfaceScope implements Rule
      */
     public function message()
     {
-        return trans('nova-surveyor::validation.interface_scope_inexistant');
+        return trans('surveyor-nova::validation.interface_scope_inexistant');
     }
 }

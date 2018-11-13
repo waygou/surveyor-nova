@@ -8,7 +8,7 @@ use Waygou\SurveyorNova\Resources\Policy;
 use Waygou\SurveyorNova\Resources\Profile;
 use Waygou\SurveyorNova\Resources\Scope;
 
-class NovaSurveyor extends Tool
+class SurveyorNova extends Tool
 {
     /**
      * Perform any tasks that need to happen when the tool is booted.
@@ -31,6 +31,6 @@ class NovaSurveyor extends Tool
      */
     public function renderNavigation()
     {
-        return view('nova-surveyor::navigation');
+        return view('surveyor-nova::navigation');
     }
 }
