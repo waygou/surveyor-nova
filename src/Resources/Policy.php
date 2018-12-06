@@ -3,14 +3,14 @@
 namespace Waygou\SurveyorNova\Resources;
 
 use App\Nova\Resource;
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
-use Waygou\SurveyorNova\Fields\PolicyFields;
-use Waygou\SurveyorNova\Rules\ClassExists;
-use Waygou\SurveyorNova\Rules\HasTraitAppliesPolicies;
+use Laravel\Nova\Fields\BelongsToMany;
 use Waygou\SurveyorNova\Rules\IsModel;
+use Waygou\SurveyorNova\Rules\ClassExists;
+use Waygou\SurveyorNova\Fields\PolicyFields;
+use Waygou\SurveyorNova\Rules\HasTraitAppliesPolicies;
 
 class Policy extends Resource
 {
